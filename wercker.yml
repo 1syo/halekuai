@@ -1,0 +1,23 @@
+box: rails
+services:
+    - postgres
+build:
+    steps:
+        - bundle-install:
+            jobs: 2
+        - script:
+            name: versions
+            code: |
+              ruby --version
+              rails --version
+        - rails-database-yml:
+            service: postgresql-docker
+        - script:
+            name: db:schema:load
+            code: RAILS_ENV=test bin/rake db:schema:load
+        - script:
+            name: rspec
+            code: bundle exec rake
+    after-steps:
+        - 1syo/idobata-notify@0.2.3:
+            token: $IDOBATA_TOKEN
