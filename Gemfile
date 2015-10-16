@@ -27,3 +27,8 @@ group :test do
   gem 'rspec-rails', group: :development
   gem 'coveralls', require: false
 end
+
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
+end
