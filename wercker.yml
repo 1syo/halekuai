@@ -1,6 +1,8 @@
 box: rails
 services:
-    - postgres
+    - id: postgres
+      env:
+        POSTGRES_PASSWORD: $POSTGRES_PASSWORD
 build:
     steps:
         - bundle-install:
