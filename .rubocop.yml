@@ -129,6 +129,9 @@ Style/SpaceAroundOperators:
     - "=>"
     - "||"
 
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
 # いくらなんでも inject { |a, e| } は短すぎるので分かりやすい名前をつけたい
 Style/SingleLineBlockParams:
   Enabled: false
