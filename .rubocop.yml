@@ -129,16 +129,6 @@ Style/SpaceAroundOperators:
     - "=>"
     - "||"
 
-# * 式展開したい場合に書き換えるのが面倒
-# * 文章ではダブルクォートよりもシングルクォートの方が頻出する
-# ことから EnforcedStyle: double_quotes 推奨
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-# auto-correct 時に Style/StringLiterals とカニバって無限ループになる (v0.28.0)
-Style/StringLiteralsInInterpolation:
-  Enabled: false
-
 # いくらなんでも inject { |a, e| } は短すぎるので分かりやすい名前をつけたい
 Style/SingleLineBlockParams:
   Enabled: false
