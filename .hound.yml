@@ -1,0 +1,11 @@
+ruby:
+  config_file: .rubocop.yml
+
+coffeescript:
+  config_file: .coffeelint.json
+
+hamllint:
+  config_file: .haml-lint.yml
+
+javascript:
+  enabled: false
