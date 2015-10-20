@@ -26,8 +26,12 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec-rails', group: :development
+  gem 'capybara'
   gem 'coveralls', require: false
+  gem 'database_rewinder'
+  gem 'factory_girl_rails'
+  gem 'poltergeist'
+  gem 'rspec-rails', group: :development
 end
 
 group :production do
