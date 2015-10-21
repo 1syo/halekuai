@@ -1,5 +1,4 @@
 ENV['RAILS_ENV'] ||= 'test'
-require 'support/coveralls'
 require 'spec_helper'
 
 require File.expand_path('../../config/environment', __FILE__)
