@@ -22,7 +22,15 @@ group :development do
 end
 
 group :development, :test do
+  gem 'awesome_print'
   gem 'byebug'
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'interactive_editor'
+  gem 'pry-rails'
+  gem 'pry-coolline'
+  gem 'pry-byebug', github: 'deivid-rodriguez/pry-byebug'
+  gem 'rb-readline'
 end
 
 group :test do
