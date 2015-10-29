@@ -81,6 +81,12 @@ GEM
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
+    exception_notification (4.0.1)
+      actionmailer (>= 3.0.4)
+      activesupport (>= 3.0.4)
+    exception_notification-idobata (1.0.0)
+      exception_notification (~> 4.0.0)
+      rest-client
     execjs (2.6.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
@@ -255,6 +261,8 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   coveralls
   database_rewinder
+  exception_notification
+  exception_notification-idobata
   factory_girl_rails
   hirb
   hirb-unicode
