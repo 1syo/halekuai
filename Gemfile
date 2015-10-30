@@ -43,6 +43,8 @@ group :test do
 end
 
 group :production do
+  gem 'exception_notification'
+  gem 'exception_notification-idobata'
   gem 'puma'
   gem 'rails_12factor'
 end
