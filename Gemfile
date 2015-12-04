@@ -29,7 +29,7 @@ group :development, :test do
   gem 'interactive_editor'
   gem 'pry-rails'
   gem 'pry-coolline'
-  gem 'pry-byebug', github: 'deivid-rodriguez/pry-byebug'
+  gem 'pry-byebug'
   gem 'rb-readline'
 end
 
