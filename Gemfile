@@ -48,3 +48,5 @@ group :production do
   gem 'puma'
   gem 'rails_12factor'
 end
+
+gem 'nokogiri', '>= 1.6.7.2'
