@@ -7,7 +7,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg'
-gem 'rails', '~> 4.2.4'
+gem 'rails', '~> 4.2.5.1'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
@@ -50,3 +50,5 @@ group :production do
 end
 
 gem 'nokogiri', '>= 1.6.7.2'
+
+gem 'rails-html-sanitizer', '~> 1.0.3'
