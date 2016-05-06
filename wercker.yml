@@ -11,8 +11,6 @@ build:
         - script:
             name: bundle config
             code: bundle config build.nokogiri --use-system-libraries
-        - rvm-use:
-            version: ruby-2.3.1
         - bundle-install:
             jobs: 2
         - script:
